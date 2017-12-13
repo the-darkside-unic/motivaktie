@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<style>
+	body {text-align: center;
+		background-color: orange;}
+
+	.header {background-color: #2b2b2b;
+				text-align: center;
+				padding: 1px;}
+
+			h1 {color: white;
+				font-family: arial;}
+
+			ul {list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #4a4a4a;}
+
+			li {float: left;}
+
+			li a {display: block;
+				color: black;
+				padding: 14px 20px;
+				text-decoration: none;
+				text-align: center;}
+
+			li a:hover {background-color: grey;}
+
+			button {padding: 10px;
+				float: center;
+				font-family: arial;
+				font-size: 20px;}
+
+		span {font-size: 30px;
+			text-align: center;}
+
+		p1 {font-size: 30px;
+			font-family: arial;}
+
+		input {font-size: 30px}
+
+		button {font-size: 30px}
+
+		p {font-size: 20px}
+	</style>
+
+	<div class="header">
+		<h1>Motivaktie site</h1>
+	</div>
+
+
+	<ul>
+		<li><a onclick="open_home()" href="#">Home</a></li>
+		<li><a onclick="open_memes()" href="#de memes">Memes</a></li>
+		<li><a onclick="open_adam_zijn_ding()" href="#">Adam's ding</a></li>
+		<li><a onclick="" href="#"></a></li>
+	</ul>
+
+
+
+<script>
+	function calculate() {
+	var input = document.getElementById("input").value
+	var uitkomst = eval(input)
+	document.getElementById('uitkomst').innerHTML = uitkomst
+	}
+
+		function open_memes() {window.open("file:///Users/caslinders/Google%20Drive%20(ctweeduizendvier@yahoo.com)/HTML/MEME%20SITE/testing.html")}
+		function open_home() {window.open("file:///Users/caslinders/Google%20Drive%20(ctweeduizendvier@yahoo.com)/HTML/DUITS%20IS%20KUT%20SITE/Eind%20product.html")}
+</script>
+
+<p1>results:<p1> <span id="uitkomst">Fill in some math. And click "calculate"</span>
+
+<br>
+
+<input type="" id="input" value="">
+<button onclick="calculate()">Calculate!</button>
+
+<p>Times = *<br>Devide = /<br>Comma = .</p>
+
+</body>
+</html>
