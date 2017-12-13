@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<title>Motivaktie eindproduct</title>
 </head>
 <body>
-<p>Voor Adam <a href="adam/zomaar.html">...</a></p>
-<p>Voor Cas <a href="cas/zomaar.html">...</a></p>
-<p>Voor Simon <a href="simon/kekke_oefening_2.html">kekke oefening</a></p>
+
+		<style>
+			body {background-color: orange}
+		
+			.header {background-color: #2b2b2b;
+				text-align: center;
+				padding: 1px;}
+
+			h1 {color: white;
+				font-family: arial;}
+
+			ul {list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #4a4a4a;}
+
+			li {float: left;}
+
+			li a {display: block;
+				color: black;
+				padding: 14px 20px;
+				text-decoration: none;
+				text-align: center;}
+
+			li a:hover {background-color: grey;}
+
+			button {padding: 10px;
+				float: center;
+				font-family: arial;
+				font-size: 30px;}
+
+			p1 {font-family: arial;}
+
+
+
+		</style>
+
+	<div class="header">
+		<h1>Motivaktie site</h1>
+	</div>
+
+
+	<ul>
+		<li><a onclick="open_memes()" href="#de memes">Memes</a></li>
+		<li><a onclick="open_calculator()" href="#">Calculator</a></li>
+		<li><a onclick="open_adam_zijn_ding()" href="#">Adam's ding</a></li>
+		<li><a onclick="" href="#"></a></li>
+	</ul>
+
+<p1>Wat is je naam?:</p1>
+<input type="" id="First_name" name="" value="voornaam">
+<input type="" id="Last_name" name="" value="achternaam">
+<input type="submit" onclick="Submit_name()" name="">
+<p></p>
+<p1>Wat is je leeftijd?:</p1>
+<input type="" id="Leeftijd" value="leeftijd">
+<input type="submit" onclick="Submit_leeftijd()" name="">
+
+
+
+<script>
+	function Submit_name() {
+		var last_name = document.getElementById('Last_name').value;
+		var first_name = document.getElementById('First_name').value;
+		if (first_name == "voornaam") {alert("Geef een voornaam op!")
+			return;}
+		if (last_name == "achternaam") {alert("Geef een achternaam op!")
+			return;}
+		alert("Hallo, "+first_name+" "+last_name);}
+
+	function Submit_leeftijd() {leeftijd = document.getElementById('Leeftijd').value;
+		alert("Informatie ontvange als: "+leeftijd)}
+
+	function open_adam_zijn_ding() {alert("Hier is nog niks")}
+
+	function open_calculator() {window.open("CALCULATOR.html#")}
+
+	function open_memes() {window.open("simon/kekke_oefening_2.html")}
+</script>
+
 </body>
 </html>
